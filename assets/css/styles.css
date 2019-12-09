@@ -1,0 +1,9 @@
+/* ---------- General ---------- */
+
+.h-screen {
+    height: 100vh;
+}
+
+.bg-primary-page {
+    background-color: #00a78c;
+}
