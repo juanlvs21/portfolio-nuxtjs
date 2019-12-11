@@ -1,5 +1,5 @@
 <template>
-  <aside class="h-screen bg-primary-page text-center text-white">
+  <aside class="h-screen bg-primary-page text-center text-white sidenav">
     <img src="~assets/img/avatar.jpg" class="sidenav-avatar" alt="Juanv" />
     <div>
       <h4 class="font-weight-bold">Juan Villarroel</h4>
@@ -9,37 +9,37 @@
       <nuxt-link
         :to="{ path: '/' }"
         class="sidenav-items"
-        :class="[itemSelected == '/' ? 'active': '']"
+        :class="[itemSelected == '/' ? 'active' : '']"
       >Inicio</nuxt-link>
 
       <nuxt-link
         :to="{ path: '/quien-soy' }"
         class="sidenav-items"
-        :class="[itemSelected == '/quien-soy' ? 'active': '']"
+        :class="[itemSelected == '/quien-soy' ? 'active' : '']"
       >¿Quién soy?</nuxt-link>
 
       <nuxt-link
         :to="{ path: '/certificaciones' }"
         class="sidenav-items"
-        :class="[itemSelected == '/certificaciones' ? 'active': '']"
+        :class="[itemSelected == '/certificaciones' ? 'active' : '']"
       >Certificaciones</nuxt-link>
 
       <nuxt-link
         :to="{ path: '/portafolio' }"
         class="sidenav-items"
-        :class="[itemSelected == '/portafolio' ? 'active': '']"
+        :class="[itemSelected == '/portafolio' ? 'active' : '']"
       >Portafolio</nuxt-link>
 
       <nuxt-link
         :to="{ path: '/blog' }"
         class="sidenav-items"
-        :class="[itemSelected == '/blog' ? 'active': '']"
+        :class="[itemSelected == '/blog' ? 'active' : '']"
       >Blog</nuxt-link>
 
       <nuxt-link
         :to="{ path: '/Contacto' }"
         class="sidenav-items"
-        :class="[itemSelected == '/Contacto' ? 'active': '']"
+        :class="[itemSelected == '/Contacto' ? 'active' : '']"
       >Contacto</nuxt-link>
     </b-nav>
   </aside>
@@ -62,11 +62,16 @@ export default {
 </script>
 
 <style>
+.sidenav {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 .sidenav-avatar {
   background-position: center;
   background-size: cover;
-  width: 120px;
-  height: 120px;
+  width: 40%;
   border-radius: 50%;
   margin: 20px;
 }

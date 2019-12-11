@@ -7,3 +7,7 @@
 .bg-primary-page {
     background-color: #00a78c;
 }
+
+.text-16px {
+    font-size: 16px !important;
+}
