@@ -1,0 +1,62 @@
+/* ---------- TRANSITIONS ---------- */
+
+
+/* Transicion slide-up */
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.slide-up-enter,
+.slide-up-leave-to {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+
+/* ---------- ANIMATED ---------- */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+
+/* zoomIn */
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}

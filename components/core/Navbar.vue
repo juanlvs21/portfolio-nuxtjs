@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" variant="success">
+  <b-navbar toggleable="lg" type="dark" sticky class="bg-gradient">
     <!-- <img src="https://placekitten.com/g/30/30" class="d-inline-block align-top" alt="Kitten" /> -->
     <b-navbar-brand href="#">Juancode</b-navbar-brand>
 
@@ -55,5 +55,18 @@ export default {
 .nuxt-link-exact-active {
   font-weight: bold;
   color: #fff !important;
+}
+.bg-gradient {
+  background: #42b883; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #42b883,
+    #347474
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #42b883,
+    #347474
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 </style>

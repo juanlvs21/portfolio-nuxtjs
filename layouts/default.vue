@@ -1,7 +1,9 @@
 <template>
   <div>
     <Navbar />
-    <nuxt />
+    <div class="content">
+      <nuxt />
+    </div>
   </div>
 </template>
 
@@ -18,3 +20,9 @@ export default {
   }
 }
 </script>
+
+<style>
+body {
+  overflow-y: scroll;
+}
+</style>

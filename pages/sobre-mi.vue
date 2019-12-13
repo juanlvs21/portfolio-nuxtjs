@@ -18,6 +18,7 @@ import ToolImg from '~/components/core/ToolImg'
 
 export default {
   name: 'SobreMiPage',
+  transition: 'slide-up',
   components: {
     ToolImg
   }
