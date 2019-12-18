@@ -17,47 +17,82 @@
         </div>
       </div>
     </section>
-    <section class="container text-center">
-      <h1 class="my-5">¿Por qué tener una página web?</h1>
+    <section class="container">
       <b-row>
-        <b-col sm="12" md="4" class="animated zoomIn">
-          <img src="~assets/icons/group.svg" width="100px" alt="Clientes" />
-          <h5 class="mt-2">
-            <b>Atrae más clientes.</b>
-          </h5>
-          <p class="text-16px">
-            En estos tiempos que corren, en la era del mundo online, se produce
-            el fenómeno de la propagación a través de medios como el correo
-            electrónico, Facebook u otras redes sociales, así como a través de
-            los clásicos foros.
-          </p>
-        </b-col>
-        <b-col sm="12" md="4" class="animated zoomIn">
-          <img src="~assets/icons/growth.svg" width="100px" alt="Ventas" />
-          <h5 class="mt-2">
-            <b>Incrementa las ventas.</b>
-          </h5>
-          <p class="text-16px">
-            Gracias a que las tiendas virtuales están disponibles 24/7, las
-            ventas nunca se detienen y tus clientes siempre podrán visitarte. La
-            comunicación con los usuarios mejora y las experiencia de compra, en
-            la mayoria de los casos, siempre es positiva.
-          </p>
-        </b-col>
-        <b-col sm="12" md="4" class="animated zoomIn">
-          <img
-            src="~assets/icons/shopping-bag.svg"
-            width="100px"
-            alt="Alcance"
+        <TitleSection title="¿Por qué tener una página web?" :left="true" />
+        <b-col md="12">
+          <ReasonCard
+            title="Atrae más clientes."
+            text="En estos tiempos que corren, en la era del mundo online, se produce el fenómeno de la propagación a través de medios como el correo electrónico, Facebook u otras redes sociales, así como a través de los clásicos foros."
+            img="group.svg"
+            alt="Clientes"
+            :right="false"
+            :left="true"
           />
-          <h5 class="mt-2">
-            <b>Permite llegar a más mercados.</b>
-          </h5>
-          <p class="text-16px">
-            No importa lo nueva o antugua que sea tu idea de negocio, si decides
-            crear una página web, esta podrá competir con cualquier otro mercado
-            y llegar hasta los lugares más lejanos del planeta.
-          </p>
+        </b-col>
+        <b-col md="12">
+          <ReasonCard
+            title="Incrementa las ventas"
+            text="Gracias a que las tiendas virtuales están disponibles 24/7, las ventas nunca se detienen y tus clientes siempre podrán visitarte. La comunicación con los usuarios mejora y las experiencia de compra, en la mayoria de los casos, siempre es positiva."
+            img="growth.svg"
+            alt="Ventas"
+            :right="false"
+            :left="true"
+          />
+        </b-col>
+        <b-col md="12">
+          <ReasonCard
+            title="Permite llegar a más mercados."
+            text="No importa lo nueva o antugua que sea tu idea de negocio, si decides crear una página web, esta podrá competir con cualquier otro mercado y llegar hasta los lugares más lejanos del planeta."
+            img="shopping-bag.svg"
+            alt="Mas mercados"
+            :right="false"
+            :left="true"
+          />
+        </b-col>
+      </b-row>
+
+      <b-row>
+        <TitleSection
+          title="¿Por qué tener una aplicación web?"
+          :left="false"
+        />
+        <b-col md="12">
+          <ReasonCard
+            title="Automatización de procesos."
+            text="Al automatizar los procesos de ejecución, tienes un mayor del negocio además de la gestión y agilidad de respuesta en el punto de venta, siendo mucho más eficiente, fortaleciendo el nivel servicio y la forma en que los clientes te perciben."
+            img="automation.svg"
+            alt="Procesos"
+            :right="true"
+            :left="false"
+          />
+        </b-col>
+        <b-col md="12">
+          <ReasonCard
+            title="Estadísticas y analíticas."
+            text="Esto facilita la identificación de tendencias y comportamientos de los usuarios, así como tambien permite un estudio detallado del funcionamiento de los procesos. El objetivo final es que la analítica digital se considere como un canal potencial más con el que conseguir los mejores resultados."
+            img="analytics.svg"
+            alt="Estadisticas"
+            :right="true"
+            :left="false"
+          />
+        </b-col>
+      </b-row>
+
+      <b-row>
+        <TitleSection
+          title="¿Por qué tener una aplicación móvil?"
+          :left="true"
+        />
+        <b-col md="12">
+          <ReasonCard
+            title="Alcance."
+            text="En la actualidad, prácticamente todas las personas cuentan con dispositivos móviles personales con los cuales interactúan todo el día en sus tareas cotidianas. Aquí es donde nace una gran oportunidad para las empresas de estar aún más cerca de sus clientes y crear otro canal de venta."
+            img="smartphone.svg"
+            alt="Moviles"
+            :right="false"
+            :left="true"
+          />
         </b-col>
       </b-row>
     </section>
@@ -67,12 +102,16 @@
 <script>
 // Components
 import ToolImg from '~/components/core/ToolImg'
+import TitleSection from '~/components/home/TitleSection'
+import ReasonCard from '~/components/home/ReasonCard'
 
 export default {
   name: 'IndexPage',
   transition: 'slide-up',
   components: {
-    ToolImg
+    ToolImg,
+    TitleSection,
+    ReasonCard
   }
 }
 </script>
