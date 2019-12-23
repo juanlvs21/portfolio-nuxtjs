@@ -1,19 +1,14 @@
 <template>
   <div class="mb-5">
     <section class="banner">
-      <img
-        src="~assets/img/programmer.webp"
-        class="programmer"
-        width="200"
-        alt="banner-programmer"
-      />
+      <img src="~assets/img/programmer.webp" class="programmer" width="200" alt="banner-programmer" />
       <div class="container text-white text-container">
         <h1>Juan Villarroel</h1>
         <h4>Desarrollador Web</h4>
         <div class="icons mt-1">
           <img src="~assets/icons/vuejs.png" width="30px" alt="Vuejs" />
-          <img src="~assets/icons/django.svg" width="30px" alt="Vuejs" />
-          <img src="~assets/icons/flutter.svg" width="20px" alt="Vuejs" />
+          <img src="~assets/icons/django.svg" width="30px" alt="Django" />
+          <img src="~assets/icons/flutter.svg" width="20px" alt="Flutter" />
         </div>
       </div>
     </section>
@@ -53,10 +48,7 @@
       </b-row>
 
       <b-row>
-        <TitleSection
-          title="¿Por qué tener una aplicación web?"
-          :left="false"
-        />
+        <TitleSection title="¿Por qué tener una aplicación web?" :left="false" />
         <b-col md="12">
           <ReasonCard
             title="Automatización de procesos."
@@ -80,10 +72,7 @@
       </b-row>
 
       <b-row>
-        <TitleSection
-          title="¿Por qué tener una aplicación móvil?"
-          :left="true"
-        />
+        <TitleSection title="¿Por qué tener una aplicación móvil?" :left="true" />
         <b-col md="12">
           <ReasonCard
             title="Alcance."
@@ -118,7 +107,7 @@ export default {
 
 <style>
 .banner {
-  background-image: url('~assets/img/tools.webp');
+  background-image: url('~assets/img/bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'PortafolioPage',
+  name: 'PortfolioPage',
   transition: 'slide-up'
 }
 </script>

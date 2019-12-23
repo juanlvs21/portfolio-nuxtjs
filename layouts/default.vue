@@ -4,7 +4,7 @@
     <div class="content">
       <nuxt />
     </div>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 

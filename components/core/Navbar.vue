@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" sticky class="bg-gradient">
+  <b-navbar toggleable="lg" type="dark" variant="info" sticky>
     <!-- <img src="https://placekitten.com/g/30/30" class="d-inline-block align-top" alt="Kitten" /> -->
     <b-navbar-brand href="#">Juancode</b-navbar-brand>
 
@@ -12,13 +12,32 @@
           <nuxt-link :to="{ path: '/' }" class="nav-link">Inicio</nuxt-link>
         </li>
 
-        <li class="nav-item">
-          <nuxt-link :to="{ path: '/sobre-mi' }" class="nav-link">Sobre mi</nuxt-link>
-        </li>
-
-        <li class="nav-item">
-          <nuxt-link :to="{ path: '/portafolio' }" class="nav-link">Portafolio</nuxt-link>
-        </li>
+        <b-nav-item-dropdown text="Sobre mi" right class="menu-dropdown">
+          <!-- <li role="presentation">
+            <nuxt-link
+              :to="{ path: '/quien-soy' }"
+              class="dropdown-item"
+              role="menuitem"
+              target="_self"
+            >¿Quien soy?</nuxt-link>
+          </li>-->
+          <li role="presentation">
+            <nuxt-link
+              :to="{ path: '/certificaciones' }"
+              class="dropdown-item"
+              role="menuitem"
+              target="_self"
+            >Certificaciones</nuxt-link>
+          </li>
+          <li role="presentation">
+            <nuxt-link
+              :to="{ path: '/portafolio' }"
+              class="dropdown-item"
+              role="menuitem"
+              target="_self"
+            >Portafolio</nuxt-link>
+          </li>
+        </b-nav-item-dropdown>
 
         <li class="nav-item">
           <nuxt-link :to="{ path: '/blog' }" class="nav-link">Blog</nuxt-link>
@@ -55,5 +74,15 @@ export default {
 .nuxt-link-exact-active {
   font-weight: bold;
   color: #fff !important;
+}
+
+.menu-dropdown li .dropdown-item:hover {
+  background-color: #17a2b8 !important;
+  color: #fff !important;
+}
+
+.menu-dropdown li .nuxt-link-exact-active {
+  font-weight: bold;
+  color: #17a2b8 !important;
 }
 </style>

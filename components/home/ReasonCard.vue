@@ -21,9 +21,7 @@
           <h5>
             <b>{{ title }}</b>
           </h5>
-          <p class="text-16px">
-            {{ text }}
-          </p>
+          <p class="text-16px">{{ text }}</p>
         </b-card-body>
       </b-card>
     </u-animate>
@@ -62,7 +60,7 @@ export default {
   margin-right: 30px;
 }
 .card-home:hover {
-  border: 1px solid #ff7e67;
+  border: 1px solid #17a2b8;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
