@@ -47,6 +47,8 @@ export default {
 <style>
 .card-certificate {
   height: 150px;
+  transition: top ease 0.3s;
+  top: 0px;
 }
 
 .card-certificate .card-title {
@@ -59,6 +61,7 @@ export default {
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  top: -5px;
 }
 
 .card-badge {
@@ -76,6 +79,13 @@ export default {
   }
   .card-col-img {
     height: 120px;
+  }
+}
+
+@keyframes moveHover {
+  from {
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
 }
 </style>
