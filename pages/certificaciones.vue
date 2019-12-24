@@ -36,6 +36,11 @@ export default {
   components: {
     CardCertificate
   },
+  head () {
+    return {
+      title: 'Certificaciones | Juancode',
+    }
+  },
   data() {
     return {
       careers: [

@@ -90,7 +90,6 @@
 
 <script>
 // Components
-import ToolImg from '~/components/core/ToolImg'
 import TitleSection from '~/components/home/TitleSection'
 import ReasonCard from '~/components/home/ReasonCard'
 
@@ -98,7 +97,6 @@ export default {
   name: 'IndexPage',
   transition: 'slide-up',
   components: {
-    ToolImg,
     TitleSection,
     ReasonCard
   }
@@ -107,7 +105,7 @@ export default {
 
 <style>
 .banner {
-  background-image: url('~assets/img/bg.png');
+  background-image: url('~assets/img/bg.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

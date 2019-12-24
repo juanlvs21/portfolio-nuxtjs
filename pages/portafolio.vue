@@ -9,6 +9,11 @@
 <script>
 export default {
   name: 'PortfolioPage',
-  transition: 'slide-up'
+  transition: 'slide-up',
+  head() {
+    return {
+      title: 'Portafolio | Juancode'
+    }
+  }
 }
 </script>
