@@ -12,32 +12,13 @@
           <nuxt-link :to="{ path: '/' }" class="nav-link">Inicio</nuxt-link>
         </li>
 
-        <b-nav-item-dropdown text="Sobre mi" right class="menu-dropdown">
-          <!-- <li role="presentation">
-            <nuxt-link
-              :to="{ path: '/quien-soy' }"
-              class="dropdown-item"
-              role="menuitem"
-              target="_self"
-            >¿Quien soy?</nuxt-link>
-          </li>-->
-          <li role="presentation">
-            <nuxt-link
-              :to="{ path: '/certificaciones' }"
-              class="dropdown-item"
-              role="menuitem"
-              target="_self"
-            >Certificaciones</nuxt-link>
-          </li>
-          <li role="presentation">
-            <nuxt-link
-              :to="{ path: '/portafolio' }"
-              class="dropdown-item"
-              role="menuitem"
-              target="_self"
-            >Portafolio</nuxt-link>
-          </li>
-        </b-nav-item-dropdown>
+        <li class="nav-item">
+          <nuxt-link :to="{ path: '/certificaciones' }" class="nav-link">Certificaciones</nuxt-link>
+        </li>
+
+        <li class="nav-item">
+          <nuxt-link :to="{ path: '/portafolio' }" class="nav-link">Portafolio</nuxt-link>
+        </li>
 
         <li class="nav-item">
           <nuxt-link :to="{ path: '/blog' }" class="nav-link">Blog</nuxt-link>
