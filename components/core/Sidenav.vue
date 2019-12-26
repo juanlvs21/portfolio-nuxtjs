@@ -10,37 +10,42 @@
         :to="{ path: '/' }"
         class="sidenav-items"
         :class="[itemSelected == '/' ? 'active' : '']"
-      >Inicio</nuxt-link>
+        >Inicio</nuxt-link
+      >
 
       <nuxt-link
         :to="{ path: '/quien-soy' }"
         class="sidenav-items"
         :class="[itemSelected == '/quien-soy' ? 'active' : '']"
-      >¿Quién soy?</nuxt-link>
+        >¿Quién soy?</nuxt-link
+      >
 
       <nuxt-link
         :to="{ path: '/certificaciones' }"
         class="sidenav-items"
         :class="[itemSelected == '/certificaciones' ? 'active' : '']"
-      >Certificaciones</nuxt-link>
+        >Certificaciones</nuxt-link
+      >
 
-      <nuxt-link
+      <!-- <nuxt-link
         :to="{ path: '/portafolio' }"
         class="sidenav-items"
         :class="[itemSelected == '/portafolio' ? 'active' : '']"
-      >Portafolio</nuxt-link>
+      >Portafolio</nuxt-link> -->
 
       <nuxt-link
         :to="{ path: '/blog' }"
         class="sidenav-items"
         :class="[itemSelected == '/blog' ? 'active' : '']"
-      >Blog</nuxt-link>
+        >Blog</nuxt-link
+      >
 
       <nuxt-link
         :to="{ path: '/Contacto' }"
         class="sidenav-items"
         :class="[itemSelected == '/Contacto' ? 'active' : '']"
-      >Contacto</nuxt-link>
+        >Contacto</nuxt-link
+      >
     </b-nav>
   </aside>
 </template>

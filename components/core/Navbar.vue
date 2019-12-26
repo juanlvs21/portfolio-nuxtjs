@@ -13,19 +13,23 @@
         </li>
 
         <li class="nav-item">
-          <nuxt-link :to="{ path: '/certificaciones' }" class="nav-link">Certificaciones</nuxt-link>
+          <nuxt-link :to="{ path: '/certificaciones' }" class="nav-link"
+            >Certificaciones</nuxt-link
+          >
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <nuxt-link :to="{ path: '/portafolio' }" class="nav-link">Portafolio</nuxt-link>
-        </li>
+        </li> -->
 
         <li class="nav-item">
           <nuxt-link :to="{ path: '/blog' }" class="nav-link">Blog</nuxt-link>
         </li>
 
         <li class="nav-item">
-          <nuxt-link :to="{ path: '/contacto' }" class="nav-link">Contacto</nuxt-link>
+          <nuxt-link :to="{ path: '/contacto' }" class="nav-link"
+            >Contacto</nuxt-link
+          >
         </li>
 
         <!-- <b-nav-item-dropdown text="Lang" right>
@@ -51,7 +55,7 @@ export default {
 }
 </script>
 
-<style >
+<style>
 .nuxt-link-exact-active {
   font-weight: bold;
   color: #fff !important;
