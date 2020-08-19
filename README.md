@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  href="https://juanlvs-nuxt.netlify.app/" target="_blank"><b>Demo</b></a>
+  <a href="https://juanlvs-nuxt.netlify.app/" target="_blank"><b>Demo</b></a>
 </p>
 
 ## Screenshot 
