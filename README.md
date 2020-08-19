@@ -1,26 +1,19 @@
-# juancode
+# Juanlvs Personal website
 
-> My personal page, portfolio and blog
+<p align="center">
+  Personal website as a web developer (Made in Nuxtjs)
+</p>
 
-## Build Setup
+<p align="center">
+  href="https://juanlvs-nuxt.netlify.app/" target="_blank"><b>Demo</b></a>
+</p>
 
-```bash
-# install dependencies
-$ yarn install
+## Screenshot 
+<p align="center">
+  <img src="https://i.imgur.com/RgmEcEw.png" title="Juanlvs-nuxt" />
+</p>
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Estructura
+- `Inicio`: Why have a website? Why have a web application? and Why have a mobile application?
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-### Paleta de colores
-
-https://colorhunt.co/palette/158293
+- `Certificaciónes`: Certifications obtained throughout my life in this field.
