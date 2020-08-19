@@ -1,4 +1,4 @@
-# Juanlvs Personal website
+# Juanlvs Personal Website
 
 <p align="center">
   Personal website as a web developer (Made in Nuxtjs)
@@ -10,10 +10,5 @@
 
 ## Screenshot 
 <p align="center">
-  <img src="https://i.imgur.com/RgmEcEw.png" title="Juanlvs-nuxt" />
+  <img src="https://i.imgur.com/he6ZXwF.png" title="Juanlvs-nuxt" />
 </p>
-
-## Estructura
-- `Inicio`: Why have a website? Why have a web application? and Why have a mobile application?
-
-- `Certificaciónes`: Certifications obtained throughout my life in this field.
