@@ -1,7 +1,6 @@
 <template>
   <b-navbar toggleable="lg" type="dark" variant="info" sticky>
-    <!-- <img src="https://placekitten.com/g/30/30" class="d-inline-block align-top" alt="Kitten" /> -->
-    <b-navbar-brand href="#">Juancode</b-navbar-brand>
+    <b-navbar-brand href="#">Juanlvs</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -16,7 +15,7 @@
           <nuxt-link :to="{ path: '/certificaciones' }" class="nav-link">Certificaciones</nuxt-link>
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <nuxt-link :to="{ path: '/portafolio' }" class="nav-link">Portafolio</nuxt-link>
         </li>
 
@@ -26,7 +25,7 @@
 
         <li class="nav-item">
           <nuxt-link :to="{ path: '/contacto' }" class="nav-link">Contacto</nuxt-link>
-        </li>
+        </li> -->
 
         <!-- <b-nav-item-dropdown text="Lang" right>
           <b-dropdown-item href="#">EN</b-dropdown-item>
