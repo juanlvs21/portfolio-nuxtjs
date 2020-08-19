@@ -1,9 +1,12 @@
 {
-    "name": "juancode",
-    "version": "1.0.0",
-    "description": "My personal page, portfolio and blog",
-    "author": "Juan Villarroel",
-    "private": true,
+    "name": "juanlvs-nuxt",
+    "version": "0.0.1",
+    "description": "Personal website as a web developer (Made in NuxtJS)",
+    "author": {
+      "name": "Juan Villarroel",
+      "email": "me@juanlvs.ml",
+      "url": "https://juanlvs.ml/"
+    },
     "scripts": {
         "dev": "nuxt",
         "build": "nuxt build",
@@ -11,14 +14,14 @@
         "generate": "nuxt generate"
     },
     "dependencies": {
-        "bootstrap": "^4.1.3",
-        "bootstrap-vue": "^2.0.0",
-        "nuxt": "^2.0.0",
-        "vue-wow": "^1.2.0"
+        "bootstrap": "4.1.3",
+        "bootstrap-vue": "2.0.0",
+        "nuxt": "2.0.0",
+        "vue-wow": "1.2.0"
     },
     "devDependencies": {
-        "eslint-config-prettier": "^4.1.0",
-        "eslint-plugin-prettier": "^3.0.1",
-        "prettier": "^1.16.4"
+        "eslint-config-prettier": "4.1.0",
+        "eslint-plugin-prettier": "3.0.1",
+        "prettier": "1.16.4"
     }
 }
